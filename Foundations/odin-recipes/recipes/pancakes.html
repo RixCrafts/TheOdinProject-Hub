@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External Links -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="http://fonts.cdnfonts.com/css/odinson" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/milo-north" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6357d3066f.js" crossorigin="anonymous"></script>
+    <!-- End External Links -->
+    <title>Cinnamon-Roll Pancakes - Odin Recipes</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow-x: hidden;
+            background-color: #fcf0dd;
+        }
+
+        header {
+            border-bottom: 2px solid #E3B261;
+            height: 125px;
+            overflow-y: hidden;
+            background-color: #fff;
+        }
+
+        header div {
+            display: flex;
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+
+        header div img {
+            height: 100%;
+            object-fit: contain;
+        }
+
+        #course-logo {
+            /* border: 1px solid #E3B261; */
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            align-self: flex-end;
+        }
+
+        #project-header {
+            font-family: 'Odinson', 'Odinson Outline', 'Odinson Light', sans-serif;
+            font-size: 30px;
+            color: #E3B261;
+            text-align: center;
+            display: flex;
+            width: 90%;
+            margin: 20px auto 50px auto;
+        }
+
+        #project-header span {
+            font-size: 60px;
+        }
+
+        #project-header span:last-child {
+            transform: rotateY(180deg);
+        }
+
+        #project-header h1 {
+            flex-grow: 1;
+        }
+
+        /* Page code */
+
+        #content-container {
+            width: 90%;
+            margin: 0 auto;
+            box-shadow: 0 0 10px #222;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        #content-container h1 {
+            width: 100%;
+            text-align: center;
+            font-family: 'MILO NORTH', sans-serif;
+            color: #c25316;
+            margin: 10px auto;
+        }
+
+        #content-container img {
+            position: relative;
+            left: 5%;
+            width: 90%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #111;
+        }
+
+        #content-container div {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        #content h3 {
+            font-size: 1.5rem;
+            color: #c25316;
+            text-align: center;
+        }
+
+        #content h2 {
+            margin-top: 10px;
+            color: #c25316;
+        }
+
+        #content ul,
+        #content ol {
+            margin-left: 20px;
+        }
+
+        #content ul li {
+            list-style: none;
+        }
+
+        #content ul ul li {
+            list-style-type: square;
+            line-height: 1.5rem;
+        }
+
+        #content ol li {
+            line-height: 1.5rem;
+        }
+
+        hr {
+            width: 90%;
+            margin: 10px auto;
+            border: 3px dotted #E3B261;
+        }
+
+        /* Footer */
+
+        footer {
+            padding: 5px 20px;
+            background-color: rgba(227, 178, 97, 1);
+            margin: 20px auto 0 auto;
+            margin-top: 50px;
+        }
+
+        footer h4 {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 10px;
+            color: #fcf0dd;
+            text-shadow: 0 0 10px #000;
+        }
+
+        footer p {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        #social-icons {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        #social-icons a {
+            color: #171515;
+            transition: all .5s;
+        }
+
+        #social-icons a:hover {
+            color: #fcf0dd;
+            text-shadow: 0 0 5px #171515;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <div>
+                <img src="https://miro.medium.com/max/1200/1*P_wUre75IHZUQYFjoD7GZA.png" alt="The Odin Project Logo"
+                     id="odin-project-banner">
+                <img src="https://ccweb.imgix.net/https%3A%2F%2Fd3f1iyfxxz8i1e.cloudfront.net%2Fcourses%2Fcourse_image%2F0fc390b7fc58.png?ar=16%3A9&auto=format&cs=strip&fit=crop&h=380&ixlib=php-3.3.1&w=535&s=213d9a8bfa9b7b499cbcec955be72057"
+                    alt="Foundation Course Logo" id="course-logo">
+            </div>
+        </a>
+    </header>
+    <main>
+        <div id="project-header">
+            <span class="material-symbols-outlined">
+                soup_kitchen
+            </span>
+            <h1>Odin Recipes</h1>
+            <span class="material-symbols-outlined">
+                soup_kitchen
+            </span>
+        </div>
+
+        <div id="content-container">
+            <h1>Cinnamon-Roll Pancakes</h1>
+            <img src="https://d3d127vhjgkwcw.cloudfront.net/images/articles/2019_07/_best-breakfast-recipes-_Cinnamon-Roll_Pancakes_.jpg"
+                alt="Cinnamon-Roll Pancake on a plate">
+            <div id="content">
+                <h3>Prep: 15min Cook: 30min Total: 45min</h3>
+                <p>Why should you have to choose between cinnamon rolls and pancakes? The answer is you shouldn’t. And
+                    the solution
+                    is this
+                    easy recipe for cinnamon-roll pancakes (yes, with plenty of icing drizzled on top). Enjoy for
+                    breakfast, lunch,
+                    dinner
+                    or dessert. Hey, we don’t judge.
+                </p>
+
+                <hr />
+
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>
+                        <h3>Cinnamon Filling</h3>
+                        <ul>
+                            <li>6 tablespoons unsalted butter, softened</li>
+                            <li>⅓ cup light brown sugar</li>
+                            <li>1 tablespoon all-purpose flour</li>
+                            <li>2 teaspoons ground cinnamon</li>
+                            <li>Pinch of salt</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Pancakes</h3>
+                        <ul>
+                            <li>2 cups all-purpose flour</li>
+                            <li>1 tablespoon baking powder</li>
+                            <li>Pinch of salt</li>
+                            <li>1½ cups buttermilk</li>
+                            <li>2 eggs</li>
+                            <li>2 tablespoons unsalted butter, melted</li>
+                            <li>1 teaspoon pure vanilla extract</li>
+                            <li>Nonstick cooking spray, as needed</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Icing</h3>
+                        <ul>
+                            <li>1½ cups confectioners’ sugar</li>
+                            <li>3 tablespoons whole milk</li>
+                            <li>½ teaspoon pure vanilla extract</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <hr />
+
+                <h2>Directions</h2>
+                <ol>
+                    <li>
+                        <p><b>Make the Cinnamon Filling:</b> In a medium bowl, mix the butter with the brown sugar,
+                            flour, cinnamon
+                            and salt to combine.
+                            Transfer to a medium plastic zip-top bag. Squeeze the filling down into one corner of the
+                            bag and snip
+                            the corner of the
+                            bag with scissors. Set aside.</p>
+                    </li>
+                    <li>
+                        <p><b>Make the Pancakes:</b> In a large bowl, whisk the flour with the baking powder and salt to
+                            combine. In
+                            a small bowl, whisk
+                            the buttermilk with the eggs, melted butter and vanilla extract to combine.</p>
+                    </li>
+                    <li>
+                        <p>Add the buttermilk mixture to the flour mixture and whisk until smooth.</p>
+                    </li>
+                    <li>
+                        <p>Heat a large skillet or griddle over medium heat. Spray the hot pan with nonstick cooking
+                            spray.</p>
+                    </li>
+                    <li>
+                        <p>Working in batches of 3, ladle or scoop ⅓ cup of pancake batter onto a large skillet or
+                            griddle. Cook for
+                            1 to 2
+                            minutes. Squeeze a spiral of the cinnamon filling on top of the pancakes. Continue to cook 1
+                            to 2
+                            minutes.</p>
+                    </li>
+                    <li>
+                        <p>Flip the pancakes and cook for 2 to 3 minutes on the other side. Remove from the pan and
+                            continue with
+                            the remaining
+                            batter and cinnamon filling. Set aside.</p>
+                    </li>
+                    <li>
+                        <p><b>Make the Icing:</b> Whisk the confectioners’ sugar with the milk and vanilla extract to
+                            combine. Add
+                            additional milk in
+                            small amounts, as needed, to make the icing easy to drizzle</p>
+                    </li>
+                    <li>
+                        <p>To serve, stack three pancakes on each plate and either drizzle with the icing or serve it on
+                            the side.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <footer>
+        <div id="about-page">
+            <h4>The Odin Project > Fundamentals > odin-recipes</h4>
+            <p>
+                Cinnamon-Roll Pancakes recipe page for the "odin-recipes" project.
+            </p>
+        </div>
+        <div id="about-dev">
+            <h4>Develop by RixCrafts</h4>
+            <p id="note-from-dev">
+                I thought of uploading the project strictly with what has been covered up to this point in the course,
+                but
+                seeing the
+                projects of other students I thought it was acceptable to explore a little so I added some details, yes,
+                I
+                put
+                everything in the same file for make it easy to read
+            </p>
+            <div id="dev-social">
+                <h4>Follow me.. RixCrafts everywhere</h4>
+                <div id="social-icons">
+                    <a href="https://github.com/RixCrafts/TheOdinProject/tree/main/Fundamentals/odin-recipes">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="more-info">
+            <p>
+                Form more recipes from the source of this one and the best breakfast recepies on the web visit: <a
+                    href="https://www.purewow.com/food/breakfast-recipes" target="_blank">PureWOW.com</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
