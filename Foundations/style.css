@@ -1,0 +1,43 @@
+header {
+  text-align: center;
+  display: inline-block;
+  font-family: Norse;
+}
+
+header a{
+  text-decoration: none;
+}
+
+header h1 {
+  font-size: 6rem;
+  background: #fcf0dd;
+}
+
+header h2 {
+  font-size: 2.5rem;
+  background: #fcf0ddaa;
+}
+
+header h3 {
+  font-size: 2rem;
+  background: #fcf0dd44;
+}
+
+main {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+}
+
+.project {
+  padding: 1rem;
+  transition: all ease 200ms;
+  border: 1px solid var(--shield-border);
+  border-radius: 15px;
+}
+
+.project:hover {
+  outline: 4px solid var(--shield-border);
+  border-radius: 25px 0px;
+}

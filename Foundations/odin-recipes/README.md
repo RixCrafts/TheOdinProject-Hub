@@ -7,4 +7,4 @@ A basic recipe website. The website will consist of a main index page which will
 ## Skills
 
 - HTML markup
-  
+- CSS styling in the html file
